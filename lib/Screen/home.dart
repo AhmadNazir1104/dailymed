@@ -21,6 +21,7 @@ class _HomeState extends State<Home> {
   late HomeProvider homeProvider;
   @override
   void initState() {
+    
     homeProvider = Provider.of<HomeProvider>(context, listen: false);
     homeProvider.fetchData();
     super.initState();
